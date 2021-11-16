@@ -1,0 +1,21 @@
+---
+title: "Group 10 CA pollution burden"
+author: "Devin Ngo & Pol Carbó Mestre"
+date: "11/15/2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+```{r read in data, echo=F}
+ces <- read_csv(here("data","ces3demographics.csv")) %>% 
+  clean_names()
+```
