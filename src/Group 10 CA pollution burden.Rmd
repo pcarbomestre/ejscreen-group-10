@@ -8,7 +8,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, fig.align = "center")
 
 library(tidyverse)
 library(janitor)
@@ -25,7 +25,8 @@ ces <- read_csv(here("data","ces3demographics.csv")) %>%
 ggplot(data = ces) +
   geom_hex(aes(x = white_percent, y = ces_3_0_score)) +
   labs( x = "White %",
-        y = "CES 3.0 score") +
+        y = "CES 3.0 score",
+        caption = "Figure 1. Hexbin plot of CES 3.0 score per percentage of caucasian population") +
   scale_fill_gradient(low = "thistle3", high = "lightsteelblue4") + 
   theme_minimal()
 ```
