@@ -31,4 +31,6 @@ ggplot(data = ces) +
   theme_minimal()
 ```
 
+**Takeaways:** There is a negative correlation between the CalEnviroScreen (CES) 3.0 score and the white population percentage. In areas that have higher percentages of Caucasians, there tends to be lower CES 3.0 scores, while areas with lower percentages of Caucasians have higher 3.0 scores. 
 
+**Data Citation:** California Office of Environmental Health Hazard Assessment. "CalEnviroScreen 3.0" (2018). For more background, go to: https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-30. 
